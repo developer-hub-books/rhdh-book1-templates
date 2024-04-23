@@ -142,8 +142,8 @@ spec:
       action: argocd:create-resources
       input:
         appName: ${{parameters.namespace}}-${{parameters.application_id}}-bootstrap
-        argoInstance: main
-        namespace: janus-argocd
+        argoInstance: ebanda-dev-argocd
+        namespace: ebanda-dev
         repoUrl: https://${{parameters.git_host}}/${{parameters.repoOwner}}/${{parameters.namespace}}-${{parameters.application_id}}-gitops.git
         path: 'argocd/'
   output:
